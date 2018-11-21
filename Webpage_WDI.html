@@ -1,2 +1,119 @@
 <!DOCTYPE html>
 
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<style>
+    body{
+        background: #404540;
+    }
+    
+    header {
+        background-color: #105164;
+        background: url(https://i.imgur.com/s4rFWAY.jpg);
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        padding: 35px 0px 0px 0px;
+    }
+
+    h1 {
+        color: white;
+        text-align: center;
+        font-size: 45px;
+    }
+    h2{
+        display: inline;
+    }
+    button{
+        color: white;
+        background: red;
+    }
+    ul {
+        background-color: black;
+    }
+    li {
+        display: inline;
+        color: white;
+        font-size: 10px;
+        padding: 15px;
+    }
+    p {
+        color: white;
+font-style: helvetica;
+font-size: 20px;  
+    }
+    article {
+        background: #515451;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px 30px 30px 30px;
+    }
+    input{
+        border: 0px
+        font-style: helvetica;
+    }
+
+    .profile {
+        border-radius: 50%;
+        width: 300px;
+        height: 300px;
+        border:7px solid #0B390B;
+
+    }
+    .header {
+        color: white;
+        font-size: 20px;
+    }
+
+</style>
+
+
+</head>
+
+<body>
+    <title>WebPage WDI - About </title>
+    <header>
+        <img src="https://i.imgur.com/cU8xTCP.jpg" title="Alex Gaiser" class="profile" padding >
+        <h1>About Me</h1>
+        <ul>
+          <li><a class="header" href="#">Databases</a></li>
+          <li><a class="header" href="#">Search</a></li>
+          <li><a class="header" href="#">FAQ</a></li>
+
+        </ul>
+    </header>    
+        <article>    
+            <div>
+                <p>Hello!</p>
+                <p>
+                    My name is Alex Gaiser and it is a pleasure to meet you. 
+                </p>
+                <p>
+                    Let me tell you a bit about myself. I joined the Peace Corps after graduating Carroll College with a degree in History and Biology. As a Peace Corps Volunteer in El Salvador I managed projects in violence prevention, education, and youth development. A year into my service, the Peace Corps evacuated El Salvador due to concerns for volunteer safety stemming from escalating gang violence. I chose to fly back to El Salvador and finish the projects I had started, finding a job with Habitat for Humanity. I worked with Habitat for Humanity in resource development for another year before being offered a position at Cristosal, a human rights organization fighting to prosecute the Salvadoran government for war crimes committed during the civil war.
+                
+                </p>
+                <p>
+                    As I worked abroad, I became increasingly interested in the power that technology and software have to create real, positive change. I began writing basic scripts and programs to improve efficiency at my job and for fun. Eventually, I realized that I was more excited and fulfilled writing code in my free time than I was in the work I did professionally. With these insights, I decided to pursue a career in programming full time. I moved back to the United States and began aggressively expanding my coding skillset, working mainly with python and C#. In addition to my expanding skills as a developer, over my career I have worked hard to polish my communication, project management,  and organizational abilities. As a self-taught, self-starter who is passionate about working with technology, I am excited by the opportunity work with a team to leverage my unique experience, drive and focus to tackle the difficult and diverse challenges of developing software. 
+                </p>
+
+                <p> 
+                    -Alex
+                </p>
+
+            <h2> 
+                <input type="email" value="example" name="email" id ="email">                
+                <button id ="btn1"> Button </button>
+            </h2>
+            </div>
+        </article>
+<script>
+    $('#btn1').click(function(){
+        var email = $('#email').val();
+        alert(email);
+    });
+</script>
+
+</body>
+
